@@ -1,7 +1,6 @@
 # https://dev.classmethod.jp/articles/python-asyncio/
 
 import asyncio
-import functools
 import time
 import requests
 
