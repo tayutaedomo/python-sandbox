@@ -1,7 +1,7 @@
 # https://dev.classmethod.jp/articles/python-asyncio/
 
 import asyncio
-import time
+# import time
 
 
 async def sleeping(sec: int):
