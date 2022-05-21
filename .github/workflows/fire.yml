@@ -34,6 +34,8 @@ jobs:
       - name: Run choice.py SEQ 3
         run: python scripts/fire/choice.py '[1,2,3,4,5]'
       - name: Run min_max.py min
-        run: python scripts/fire/min_max.py min 1 -2 3 
+        run: python scripts/fire/min_max.py min 1 -2 3
       - name: Run min_max.py max
-        run: python scripts/fire/min_max.py max 1 -2 3 
+        run: python scripts/fire/min_max.py max 1 -2 3
+      - name: Run class.py min
+        run: python scripts/fire/class.py min 1 -2 3
