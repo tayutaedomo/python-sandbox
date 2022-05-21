@@ -1,0 +1,28 @@
+name: Try fire
+on:
+  push:
+    branches: ["feature/fire", "main"]
+jobs:
+  check:
+    name: "Exec fire scripts"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: BSFishy/pip-action@v1
+        with:
+          requirements: requirements.txt
+      - name: Run choice.py
+        run: python scripts/fire/choice.py
+      - name: Run choice.py SEQ 1
+        run: python scripts/fire/choice.py 1,2,3,4,5
+      - name: Run choice.py SEQ 2
+        run: python scripts/fire/choice.py "1,2,3,4,5"
+      - name: Run choice.py SEQ 3
+        run: python scripts/fire/choice.py "[1,2,3,4,5]"
