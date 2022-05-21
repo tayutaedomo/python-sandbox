@@ -2,15 +2,15 @@ name: script/fire
 on:
   # push:
   #   branches:
-  #     - "main"
+  #     - 'main'
   pull_request:
     types:
       - opened
-    branches:
-      "feature/fire"
+    paths:
+      - 'scripts/fire/**'
 jobs:
   check:
-    name: "Exec fire scripts"
+    name: 'Exec fire scripts'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -29,6 +29,6 @@ jobs:
       - name: Run choice.py SEQ 1
         run: python scripts/fire/choice.py 1,2,3,4,5
       - name: Run choice.py SEQ 2
-        run: python scripts/fire/choice.py "1,2,3,4,5"
+        run: python scripts/fire/choice.py '1,2,3,4,5'
       - name: Run choice.py SEQ 3
-        run: python scripts/fire/choice.py "[1,2,3,4,5]"
+        run: python scripts/fire/choice.py '[1,2,3,4,5]'
