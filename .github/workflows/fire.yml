@@ -4,8 +4,8 @@ on:
   #   branches:
   #     - 'main'
   pull_request:
-    types:
-      - opened
+    branches:
+      - 'feature/fire'
     paths:
       - 'scripts/fire/**'
 jobs:
