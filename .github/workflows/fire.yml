@@ -39,3 +39,11 @@ jobs:
         run: python scripts/fire/min_max.py max 1 -2 3
       - name: Run class.py min
         run: python scripts/fire/class.py min 1 -2 3
+      - name: Run sub_command bin from_dec
+        run: python scripts/fire/sub_command.py bin from_dec 3
+      - name: Run sub_command.py bin to_dec
+        run: python scripts/fire/sub_command.py bin to_dec 11
+      - name: Run sub_command.py oct from_dec
+        run: python scripts/fire/sub_command.py oct from_dec 9
+      - name: Run sub_command.py oct to_dec
+        run: python scripts/fire/sub_command.py oct to_dec 11
