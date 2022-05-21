@@ -1,7 +1,13 @@
-name: Try fire
+name: script/fire
 on:
-  push:
-    branches: ["feature/fire", "main"]
+  # push:
+  #   branches:
+  #     - "main"
+  pull_request:
+    types:
+      - opened
+    branches:
+      "feature/fire"
 jobs:
   check:
     name: "Exec fire scripts"
