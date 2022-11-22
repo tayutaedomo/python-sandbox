@@ -2,5 +2,5 @@ requests
 chromedriver-binary==81.0.4044.138.0
 selenium
 pandas==1.0.4
-Pillow==9.0.1
+Pillow==9.3.0
 fire==0.4.0
