@@ -5,6 +5,5 @@ Try Python v3.
 ```
 $ git clone git@github.com:tayutaedomo/python-sandbox.git
 $ cd python-sandbox
-$ source venv/bin/activate
-$ pip install -r requirements.txt
+$ uv sync
 ```

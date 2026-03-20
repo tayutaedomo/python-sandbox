@@ -1,0 +1,14 @@
+[project]
+name = "python-sandbox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromedriver-binary>=148.0.7742.0.0",
+    "fire>=0.7.1",
+    "pandas>=2,<3",
+    "pillow>=12.1.1",
+    "requests>=2.32.5",
+    "selenium>=4.41.0",
+]
